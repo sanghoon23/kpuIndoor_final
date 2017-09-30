@@ -3,9 +3,9 @@
 ################################
 
 
-kpuindoormap --  초기데모파일
+kpuindoormap 
 
-kpuinddormap_layout 초기데모레이아웃
+kpuinddormap_layout
 
 ################################
 
