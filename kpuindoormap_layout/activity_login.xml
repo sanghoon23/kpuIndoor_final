@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/login"
+    >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="90dp"
+        android:textSize="50dp"
+        android:text=""
+        />
+
+    <EditText
+        android:id="@+id/logintext1"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="151dp"
+        android:hint="아이디"
+        />
+
+    <EditText
+        android:id="@+id/logintext2"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:password="true"
+        android:layout_marginTop="201dp"
+        android:hint="비밀번호"
+        />
+
+    <RadioButton
+        android:id="@+id/loginr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="120dp"
+        android:checked="true"
+        android:layout_below="@id/logintext2"
+        android:text="고객"
+        />
+
+    <RadioButton
+        android:id="@+id/loginr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logintext2"
+        android:layout_toRightOf="@+id/loginr1"
+        android:text="관리자"
+        />
+
+    <Button
+        android:id="@+id/loginb1"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:textAllCaps="false"
+        android:layout_below="@id/loginr1"
+        android:layout_marginLeft="80dp"
+        android:text="로그인"
+        android:onClick="login"
+        />
+
+    <Button
+        android:id="@+id/loginb2"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:textAllCaps="false"
+        android:layout_below="@id/loginr2"
+        android:layout_toRightOf="@+id/loginb1"
+        android:text="회원가입" />
+
+
+</RelativeLayout>

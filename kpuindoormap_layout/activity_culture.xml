@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/culture"
+    tools:context="com.kpu.kpuindoormap.CultureActivity">
+
+    <Button
+        android:id="@+id/imageview3"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+
+        android:text="문화센터"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#00000000"
+        android:textSize="30dp"
+
+        android:textStyle="bold"
+        />
+
+
+
+    <ImageSwitcher
+        android:id="@+id/imageSwitcher2"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_below="@+id/imageview3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Gallery
+        android:id="@+id/gallery2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#55999999"
+        android:layout_below="@+id/imageSwitcher2" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="260dp"
+        android:layout_height="50dp"
+
+        android:text="예약 문의하기"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/gallery2"
+        android:background="#00000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+
+        />
+
+
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:background="@drawable/call"
+
+        android:layout_toRightOf="@+id/button5"
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/gallery2"
+
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:background="@drawable/text"
+
+        android:layout_below="@+id/gallery2"
+        android:layout_toRightOf="@+id/button1"
+        />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+
+        android:text="홈페이지 접속하기"
+
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/button5"
+        android:background="#00000000"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+
+        android:layout_gravity="center_horizontal"
+
+        android:background="@drawable/internet"
+        android:layout_below="@+id/button2"
+        android:layout_toRightOf="@+id/button6"
+        />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+
+        android:text=" 일정 등록하기"
+
+
+        android:layout_gravity="center_horizontal"
+        android:layout_below="@+id/button5"
+        android:background="#00000000"
+        android:textSize="18dp"
+        android:layout_toRightOf="@+id/button3"
+        android:textStyle="bold"
+
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/calendar"
+
+        android:layout_below="@+id/button2"
+        android:layout_gravity="center_horizontal"
+        android:layout_toRightOf="@+id/button7"
+
+
+        android:onClick="onClick"
+        />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/button7"
+
+        android:text="문화센터 운영시간 : AM 10:00 ~ PM 8:30"
+        android:textAllCaps="false"
+        android:background="#C0C0C0"
+        />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/button8"
+
+        android:text="갤러리 운영시간 : AM 11:00 ~ PM 7:00"
+        android:textAllCaps="false"
+        android:background="#C0C0C0"
+        />
+</RelativeLayout>

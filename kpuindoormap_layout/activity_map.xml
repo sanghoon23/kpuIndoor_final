@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kpu.kpuindoormap.MapActivity"
+    android:background="#ffffff" >
+
+    <com.kpu.kpuindoormap.MapView
+        android:id="@+id/mv_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/lay_bottom" />
+
+    <LinearLayout
+        android:background="#f0f0f0"
+        android:id="@+id/lay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_destName"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:text="목적지명 표시" />
+
+        <Button
+            android:id="@+id/btn_setDest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="목적지로 설정" />
+    </LinearLayout>
+
+</RelativeLayout>

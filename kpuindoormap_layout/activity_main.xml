@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.kpu.kpuindoormap.MainActivity"
+    >
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        >
+
+        <Button
+            android:id="@+id/home"
+            android:layout_width="300px"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:background="@drawable/home"
+            android:text="KPU
+            STORE"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15dp"
+
+            />
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="300px"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:background="@drawable/b1"
+            android:text="길 찾기
+            서비스"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15dp"
+            />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="300px"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:background="@drawable/b2"
+            android:text="뉴스 /
+            이벤트"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="300px"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:background="@drawable/b3"
+            android:text="문화센터"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15dp"
+            />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="300px"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:background="@drawable/b4"
+            android:text="MyPage"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15dp"
+            />
+
+        <Button
+            android:id="@+id/b5"
+            android:layout_width="300px"
+            android:layout_height="100px"
+            android:layout_weight="1"
+            android:background="@drawable/b5"
+            android:text="관리자권한"
+            android:textColor="#FFFFFFFF"
+            android:textSize="15dp"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <RelativeLayout
+            android:id="@+id/homepage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/happylife"
+            >
+
+        </RelativeLayout>
+
+    </FrameLayout>
+</LinearLayout>
