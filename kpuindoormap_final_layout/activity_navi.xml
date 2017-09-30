@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+    <LinearLayout
+        android:id="@+id/lay_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+        <EditText
+            android:id="@+id/et_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:hint="목적지 설정"
+            />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/lay_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lay_top"
+        android:layout_marginTop="10dp"
+        >
+
+        <Button
+            android:id="@+id/btn_floor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="OnPopupButtonClick"
+            android:text="층 선택"
+            android:layout_alignParentRight="true"
+            />
+
+    </RelativeLayout>
+
+    <com.kpu.kpuindoormap.MapView
+        android:id="@+id/mv_map"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_above="@+id/lay_bottom"
+        android:layout_below="@+id/lay_center"
+        />
+
+    <LinearLayout
+        android:background="#f0f0f0"
+        android:id="@+id/lay_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:id="@+id/tv_rComment"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="목적지 표출 뷰" />
+
+        <Button
+            android:gravity="center_vertical"
+            android:layout_margin="2dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="경로 취소"
+            android:id="@+id/btn_rCancel"/>
+    </LinearLayout>
+
+</LinearLayout>

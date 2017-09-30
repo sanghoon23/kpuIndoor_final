@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/event"
+
+    >
+
+    <ImageView
+        android:id="@+id/ImageView2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/evmain"
+        />
+
+    <ImageSwitcher
+        android:id="@+id/imageSwitcher1"
+        android:layout_width="180dp"
+        android:layout_height="200dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_below="@+id/ImageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <Gallery
+        android:id="@+id/gallery1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#55999999"
+        android:layout_below="@+id/imageSwitcher1" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/gallery1"
+
+        android:text="행운의 TV 쇼핑 상품받고 추가 적립받자!(~2017.05.21)"
+        android:textAllCaps="false"
+        android:background="#FFF0F5"
+        />
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button3"
+
+        android:text="디어펫마트 그랜드오픈! 첫 주문시 풍성한 혜택(~2017.06.05)"
+        android:textAllCaps="false"
+        android:background="#FFFAFA"
+        />
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button4"
+
+        android:text="KB국민카드 7만원이상 구매시 5% 청구할인!(~2017.06.24)"
+        android:textAllCaps="false"
+        android:background="#FFF0F5"
+        />
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button5"
+
+        android:text="영수증 응모하고 여러가지 사은품 받아가자!(~2017.07.13)"
+        android:textAllCaps="false"
+        android:background="#FFFAFA"
+        />
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button6"
+
+        android:text="50주년 기념! 5대 카드로 결제시 추가 적립까지(~2017.08.21)"
+        android:textAllCaps="false"
+        android:background="#FFF0F5"
+        />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/button7"
+
+        android:text="오늘의 쇼핑시간 : AM 10:00 ~ PM 8:30"
+        android:textAllCaps="false"
+        android:background="#C0C0C0"
+        />
+
+</RelativeLayout>
